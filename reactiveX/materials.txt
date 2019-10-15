@@ -10,6 +10,8 @@ https://csharp.hotexamples.com/site/file?hash=0xa65976909f35b9e4f42b0618abe08888
 https://stackoverflow.com/questions/33944588/eventbus-with-rx
 https://rehansaeed.com/reactive-extensions-part1-replacing-events/
 https://reactiveui.net/docs/resources/videos
+https://leecampbell.com/2010/08/
+http://rxwiki.wikidot.com/start
 
 rxjs
 https://www.learnrxjs.io/
@@ -48,6 +50,7 @@ https://www.slideshare.net/NikolayYasinskiy/reactive-ui-c
 https://www.slideshare.net/dotnetconf/ss-62296026
 https://en.ppt-online.org/142766
 https://www.slideshare.net/kaatula/reactive-extensions-11973243
+http://gotocon.com/dl/goto-prague-2011/slides/BartJ.F.DeSmet_RxYourPrescriptionToCureEventProcessingBlues.pdf
 
 akka
 https://jazzteam.org/ru/technical-articles/reactive-programming-on-the-example-of-akka/
