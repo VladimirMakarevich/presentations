@@ -16,6 +16,7 @@ https://habr.com/ru/post/430534/
 
 
 https://share.zabbix.com/assp-basic-health-check
+https://share.zabbix.com/cat-app/app-other/trassir-cctv-dvr-sdk
 
 Videos
 https://www.youtube.com/user/ZabbixSIA
