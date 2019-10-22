@@ -12,7 +12,7 @@ https://rehansaeed.com/reactive-extensions-part1-replacing-events/
 https://reactiveui.net/docs/resources/videos
 https://leecampbell.com/2010/08/
 http://rxwiki.wikidot.com/start
-
+	
 rxjs
 https://www.learnrxjs.io/
 https://webdraftt.com/tutorial/rxjs
@@ -58,4 +58,9 @@ https://jazzteam.org/ru/technical-articles/reactive-programming-on-the-example-o
 performance
 https://stackoverflow.com/questions/42062199/reactive-programming-advantages-disadvantages
 https://stackoverflow.com/questions/45343289/does-it-make-sense-to-use-reactive-programming-from-a-performance-standpoint-whe
+
+
+Books
+Rx.NET In Action
+DEVHOL202 – Curing the asynchronous blues with the Reactive Extensions for .NET
 
