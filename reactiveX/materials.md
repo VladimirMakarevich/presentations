@@ -1,3 +1,6 @@
+The Reactive Manifesto
+https://www.reactivemanifesto.org/
+
 native
 http://reactivex.io/
 http://reactivex.io/learnrx/
@@ -45,6 +48,9 @@ https://www.youtube.com/watch?v=3szEGhrFrts&t=329s
 https://www.youtube.com/watch?v=2otvaKKUXto
 https://www.youtube.com/watch?v=gCwSVQO_PtY
 
+React 2014 : Erik Meijer - What does it mean to be Reactive?
+https://www.youtube.com/watch?v=sTSQlYX5DU0
+
 presentations
 https://www.slideshare.net/NikolayYasinskiy/reactive-ui-c
 https://www.slideshare.net/dotnetconf/ss-62296026
@@ -63,4 +69,9 @@ https://stackoverflow.com/questions/45343289/does-it-make-sense-to-use-reactive-
 Books
 Rx.NET In Action
 DEVHOL202 – Curing the asynchronous blues with the Reactive Extensions for .NET
+
+
+Data-Oriented Design
+http://www.dataorienteddesign.com/dodmain/
+
 
