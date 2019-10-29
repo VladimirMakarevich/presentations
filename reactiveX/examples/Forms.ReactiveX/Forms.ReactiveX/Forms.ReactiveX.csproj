@@ -66,8 +66,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LazyBus.cs" />
+    <Compile Include="MessageBus\Contracts\IMessage.cs" />
+    <Compile Include="MessageBus\Contracts\IMessageBus.cs" />
+    <Compile Include="MessageBus\Contracts\IMessageBusProvider.cs" />
+    <Compile Include="MessageBus\MessageBus.cs" />
+    <Compile Include="MessageBus\Types\ChannelType.cs" />
+    <Compile Include="MessageBus\Types\MessageScope.cs" />
+    <Compile Include="Messages\TestMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveForm.Designer.cs">
+      <DependentUpon>ReactiveForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +94,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReactiveForm.resx">
+      <DependentUpon>ReactiveForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

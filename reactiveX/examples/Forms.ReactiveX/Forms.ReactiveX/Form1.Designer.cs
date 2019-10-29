@@ -30,6 +30,7 @@
         {
             this.txt_simpleBox = new System.Windows.Forms.TextBox();
             this.lbl_text = new System.Windows.Forms.Label();
+            this.btn_OpenReactiveForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_simpleBox
@@ -50,11 +51,22 @@
             this.lbl_text.Text = "here will be text from input";
             this.lbl_text.Click += new System.EventHandler(this.Lbl_text_Click);
             // 
+            // btn_OpenReactiveForm
+            // 
+            this.btn_OpenReactiveForm.Location = new System.Drawing.Point(56, 89);
+            this.btn_OpenReactiveForm.Name = "btn_OpenReactiveForm";
+            this.btn_OpenReactiveForm.Size = new System.Drawing.Size(100, 23);
+            this.btn_OpenReactiveForm.TabIndex = 2;
+            this.btn_OpenReactiveForm.Text = "open reactive form";
+            this.btn_OpenReactiveForm.UseVisualStyleBackColor = true;
+            this.btn_OpenReactiveForm.Click += new System.EventHandler(this.Btn_OpenReactiveForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_OpenReactiveForm);
             this.Controls.Add(this.lbl_text);
             this.Controls.Add(this.txt_simpleBox);
             this.Name = "Form1";
@@ -68,6 +80,7 @@
 
         private System.Windows.Forms.TextBox txt_simpleBox;
         private System.Windows.Forms.Label lbl_text;
+        private System.Windows.Forms.Button btn_OpenReactiveForm;
     }
 }
 

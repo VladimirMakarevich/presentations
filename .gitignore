@@ -123,3 +123,6 @@ reactiveX/examples/Forms.ReactiveX/packages/System.Reactive.4.2.0/.signature.p7s
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/obj/Debug/Forms.ReactiveX.pdb
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/obj/Debug/Forms.ReactiveX.exe
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/obj/Debug/Forms.ReactiveX.csprojAssemblyReference.cache
+/reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/obj/Debug
+/reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Forms.ReactiveX.csproj.user
+/reactiveX/examples/Forms.ReactiveX/.vs/Forms.ReactiveX/v16/Server/sqlite3
