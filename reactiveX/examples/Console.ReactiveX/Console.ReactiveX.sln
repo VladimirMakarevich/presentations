@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.ReactiveX", "Console.ReactiveX\Console.ReactiveX.csproj", "{8FFCACED-9B02-4330-AF43-361163C794E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FFCACED-9B02-4330-AF43-361163C794E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFCACED-9B02-4330-AF43-361163C794E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFCACED-9B02-4330-AF43-361163C794E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFCACED-9B02-4330-AF43-361163C794E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D6E1BD6-F327-472D-851E-95E5692636A0}
+	EndGlobalSection
+EndGlobal
