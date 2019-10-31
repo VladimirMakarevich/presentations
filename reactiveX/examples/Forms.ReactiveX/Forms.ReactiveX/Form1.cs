@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reactive.Subjects;
 using System.Windows.Forms;
+using Forms.ReactiveX.MessageBus;
 using Forms.ReactiveX.MessageBus.Contracts;
 using Forms.ReactiveX.Messages;
 
@@ -17,8 +18,7 @@ namespace Forms.ReactiveX {
 
         private void Txt_simpleBox_TextChanged(object sender, EventArgs e) {
             _subject.OnNext(this.txt_simpleBox.Text);
-            var message = new TestMessage();
-            message.SetData(this.txt_simpleBox.Text);
+            var message = new TestMessage<string>(this.txt_simpleBox.Text);
             _bus.Send(message);
         }
 

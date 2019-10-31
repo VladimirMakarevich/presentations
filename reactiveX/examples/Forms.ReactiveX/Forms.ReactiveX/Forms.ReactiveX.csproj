@@ -66,13 +66,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LazyBus.cs" />
+    <Compile Include="MessageBus\Contracts\MessageBase.cs" />
+    <Compile Include="MessageBus\LazyBus.cs" />
     <Compile Include="MessageBus\Contracts\IMessage.cs" />
     <Compile Include="MessageBus\Contracts\IMessageBus.cs" />
-    <Compile Include="MessageBus\Contracts\IMessageBusProvider.cs" />
     <Compile Include="MessageBus\MessageBus.cs" />
     <Compile Include="MessageBus\Types\ChannelType.cs" />
-    <Compile Include="MessageBus\Types\MessageScope.cs" />
     <Compile Include="Messages\TestMessage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
