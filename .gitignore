@@ -78,11 +78,6 @@ reactiveX/examples/Forms.ReactiveX/packages/System.Reactive.4.2.0/build/netcorea
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/obj/Debug/Forms.ReactiveX.csproj.GenerateResource.cache
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/bin/Debug/Forms.ReactiveX.pdb
 reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/bin/Debug/Forms.ReactiveX.exe.config
-reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Properties/Settings.settings
-reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Properties/Settings.Designer.cs
-reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Properties/Resources.resx
-reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Properties/Resources.Designer.cs
-reactiveX/examples/Forms.ReactiveX/Forms.ReactiveX/Properties/AssemblyInfo.cs
 reactiveX/examples/Forms.ReactiveX/packages/System.ValueTuple.4.5.0/version.txt
 reactiveX/examples/Forms.ReactiveX/packages/System.ValueTuple.4.5.0/useSharedDesignerContext.txt
 reactiveX/examples/Forms.ReactiveX/packages/System.ValueTuple.4.5.0/lib/uap10.0.16299/_._
