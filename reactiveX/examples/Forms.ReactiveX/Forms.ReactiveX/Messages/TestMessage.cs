@@ -4,7 +4,7 @@ using Forms.ReactiveX.MessageBus.Types;
 namespace Forms.ReactiveX.Messages {
     public class TestMessage<T> : MessageBase {
         public override string Name => "Test Message";
-        public override ChannelType Type => ChannelType.Stack;
+        public override ChannelType Type => ChannelType.Base;
 
         public T Data;
 
