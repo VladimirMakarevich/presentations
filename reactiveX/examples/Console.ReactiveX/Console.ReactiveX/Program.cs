@@ -7,35 +7,35 @@ using System.Threading;
 namespace Console.ReactiveX {
     public class Program {
         public static void Main(string[] args) {
-            System.Console.WriteLine("Observable Range:\n");
-            ObservableRange();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
-
-            System.Console.WriteLine("\nParallel Execution (CombineLatest):\n");
-            ParallelExecution();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
-
-            System.Console.WriteLine("\nConvert List to Observable:\n");
-            ConvertToObservable();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
-
-            System.Console.WriteLine("\nWrite one number per second (Interval):\n");
-            OneNumberPerSecond();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
-
-            System.Console.WriteLine("\nBuffer:\n");
-            Buffer();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
-
-            System.Console.WriteLine("\nThrottle:\n");
-            Throttle();
-            System.Console.WriteLine("\n\n/------------------------------------------------------/");
-            System.Console.ReadKey();
+//            System.Console.WriteLine("Observable Range:\n");
+//            ObservableRange();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
+//
+//            System.Console.WriteLine("\nParallel Execution (CombineLatest):\n");
+//            ParallelExecution();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
+//
+//            System.Console.WriteLine("\nConvert List to Observable:\n");
+//            ConvertToObservable();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
+//
+//            System.Console.WriteLine("\nWrite one number per second (Interval):\n");
+//            OneNumberPerSecond();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
+//
+//            System.Console.WriteLine("\nBuffer:\n");
+//            Buffer();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
+//
+//            System.Console.WriteLine("\nThrottle:\n");
+//            Throttle();
+//            System.Console.WriteLine("\n\n/------------------------------------------------------/");
+//            System.Console.ReadKey();
 
             System.Console.WriteLine("\nMerge:\n");
             Merge();
@@ -61,11 +61,11 @@ namespace Console.ReactiveX {
         }
 
         private static IObservable<int> Xs => Generate(0, new List<int> {
-            0, 1, 1, 1
+            1, 2, 2, 2
         });
 
         private static IObservable<int> Ys => Generate(100, new List<int> {
-            1, 1, 1, 1
+            2, 2, 2, 2
         });
 
         private static IObservable<int> Generate(int initialValue, IList<int> intervals) {
@@ -110,7 +110,7 @@ namespace Console.ReactiveX {
 
         private static void Buffer() {
             var inbox = EndlessBarrageOfEmail().ToObservable();
-            var inboxBuffer = inbox.Buffer(TimeSpan.FromSeconds(3));
+            var inboxBuffer = inbox.Throttle(TimeSpan.FromSeconds(1));
             inboxBuffer.Subscribe(emails => {
                 System.Console.WriteLine($"You've got {emails.Count()} new messages!  Here they are!");
                 foreach (var email in emails) {
