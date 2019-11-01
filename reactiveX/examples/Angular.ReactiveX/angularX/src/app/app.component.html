@@ -1,8 +1,11 @@
 <router-outlet></router-outlet>
-<div>
-  <input [type]="'text'">
-</div>
+<input
+  (keyup)="searchTerm.next($event.target.value)">
 
-<div>
-
-</div>
+<ul *ngIf="results">
+  <li *ngFor="let result of results | slice:0:9">
+    <a href="{{ result.latest }}" target="_blank">
+      {{ result.name }}
+    </a>
+  </li>
+</ul>
