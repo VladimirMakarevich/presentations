@@ -61,6 +61,18 @@ Anticorruption Layer (Предохранительный слой)
 большой комок грязи (Big ball of mud).
 
 
+>>>>>>>>>>> Part 2
+>> Сущность (Entity)
+>> Объект-Значение (Value Object)
+>> Служба Предметной Области (Domain Service)
+>> Событие (Domain Event)
+>> Модуль (Module)
+>> Агрегат (Aggregate)
+>> Фабрика (Factory)
+>> Хранилища (Repository)
+ 
+
+
 
 
 
