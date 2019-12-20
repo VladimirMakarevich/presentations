@@ -128,10 +128,141 @@ let bothPlus = [0, ...first, ...second, 5];
 
 
 >>> Interfaces
+interface LabeledValue {
+    label: string;
+}
 
+> Optional Properties 
+interface SquareConfig {
+    color?: string;
+    width?: number;
+}
+
+> Readonly properties
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+
+> Function Types
+interface SearchFunc {
+    (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+    let result = source.search(subString);
+    return result > -1;
+}
+
+> Indexable Types
+interface StringArray {
+    [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Bob", "Fred"];
+
+let myStr: string = myArray[0];
+
+> Class Types
+interface ClockInterface {
+    currentTime: Date;
+}
+
+class Clock implements ClockInterface {
+    currentTime: Date = new Date();
+    constructor(h: number, m: number) { }
+}
+
+> Extending Interfaces
+interface Shape {
+    color: string;
+}
+
+interface Square extends Shape {
+    sideLength: number;
+}
+
+let square = {} as Square;
+square.color = "blue";
+square.sideLength = 10;
+
+> Hybrid Types
+interface Counter {
+    (start: number): string;
+    interval: number;
+    reset(): void;
+}
+
+function getCounter(): Counter {
+    let counter = (function (start: number) { }) as Counter;
+    counter.interval = 123;
+    counter.reset = function () { };
+    return counter;
+}
+
+let c = getCounter();
+c(10);
+c.reset();
+c.interval = 5.0;
+
+> Interfaces Extending Classes
+hat have certain properties. The subclasses don’t have to be related besides inheriting from the base class. For example:
+
+class Control {
+    private state: any;
+}
+
+interface SelectableControl extends Control {
+    select(): void;
+}
+
+class Button extends Control implements SelectableControl {
+    select() { }
+}
+
+class TextBox extends Control {
+    select() { }
+}
+
+// Error: Property 'state' is missing in type 'Image'.
+class Image implements SelectableControl {
+    private state: any;
+    select() { }
+}
 
 
 >>> Classes
+> Inheritance
+> Public, private, and protected modifiers
+> Accessors
+class Employee {
+    private _fullName: string;
+
+    get fullName(): string {
+        return this._fullName;
+    }
+
+    set fullName(newName: string) {
+        if (newName && newName.length > fullNameMaxLength) {
+            throw new Error("fullName has a max length of " + fullNameMaxLength);
+        }
+        
+        this._fullName = newName;
+    }
+}
+
+> Static Properties
+> Abstract Classes
+abstract class Animal {
+abstract class Animal {
+    abstract makeSound(): void;
+    move(): void {
+        console.log("roaming the earth...");
+    }
+}
+
 
 
 
